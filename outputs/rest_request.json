@@ -1,0 +1,38 @@
+{
+    "contents": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Please read aloud the following in a podcast interview style:\nSpeaker 1: We're seeing a noticeable shift in consumer preferences across several sectors. What seems to be driving this change?\nSpeaker 2: It appears to be a combination of factors, including greater awareness of sustainability issues and a growing demand for personalized experiences."
+          }
+        ]
+      }
+    ],
+    "generationConfig": {
+      "responseModalities": ["audio"],
+      "temperature": 1,
+      "speech_config": {
+        "multi_speaker_voice_config": {
+          "speaker_voice_configs": [
+            {
+              "speaker": "Speaker 1",
+              "voice_config": {
+                "prebuilt_voice_config": {
+                  "voice_name": "Zephyr"
+                }
+              }
+            },
+            {
+              "speaker": "Speaker 2",
+              "voice_config": {
+                "prebuilt_voice_config": {
+                  "voice_name": "Puck"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+}

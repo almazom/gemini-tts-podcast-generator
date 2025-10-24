@@ -1,0 +1,38 @@
+{
+    "contents": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Please read aloud the following:\nSpeaker 1: Hey Assistant, how tall is the Empire State Building?\nSpeaker 2: The Empire State Building is 1,454 feet, or about 443 meters tall."
+          }
+        ]
+      }
+    ],
+    "generationConfig": {
+      "responseModalities": ["audio"],
+      "temperature": 1,
+      "speech_config": {
+        "multi_speaker_voice_config": {
+          "speaker_voice_configs": [
+            {
+              "speaker": "Speaker 1",
+              "voice_config": {
+                "prebuilt_voice_config": {
+                  "voice_name": "Zephyr"
+                }
+              }
+            },
+            {
+              "speaker": "Speaker 2",
+              "voice_config": {
+                "prebuilt_voice_config": {
+                  "voice_name": "Puck"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+}
